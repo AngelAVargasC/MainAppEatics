@@ -1,0 +1,270 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color:#dedede;
+    background-image: url('imagenes/FondoF.png');
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f3fdff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #444444;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #c7c7c7;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+#main {
+    color: #cbe6ec;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+h2 {
+    
+    color: aliceblue;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+.sidebar_div {
+    background-image: url('imagenes/Logo_Eatics-removebg-preview.png');
+    background-size: cover; /* Escala la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    
+    height: 110px; /* Ajusta según sea necesario */
+    width: 100%; /* Ajusta según sea necesario */
+}
+
+#main .base p {
+    color: rgb(255, 255, 255);
+} 
+
+input {
+    border-radius: 5px;
+}
+
+.ped_main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 10px 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para el grid de mosaicos */
+.grid-container {
+    
+    display: grid;
+    border-radius: 40px;
+    background-color:#d0d0d058;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin-top: 10px;
+    height: 100vmin;
+
+}
+
+.grid-item {
+    background-image: url('imagenes/Logo_LiverpL.jpg');
+    background-size: cover; /* Escala la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    text-decoration: none;
+    height: 40vmin;
+}
+
+.grid-item2 {
+    background-image: url('imagenes/cuidado_con_el_perro_LogoL.jpg');
+    background-size: cover; /* Escala la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    text-decoration: none;
+    height: 40vmin;
+}
+.grid-item3 {
+    background-image: url('imagenes/Logo_coppelL.png');
+    background-size: cover; /* Escala la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    text-decoration: none;
+    height: 40vmin;
+}
+
+.grid-item4 {
+    background-image: url('imagenes/Logo_PHL.png'); 
+    background-size: cover; /* Escala la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    text-decoration: none;
+    height: 40vmin;
+}
+.grid-item5 {
+    background-image: url('imagenes/Logo_forever21L.png'); 
+    background-size: cover; /* Escala la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    text-decoration: none;
+    height: 40vmin;
+}
+
+.grid-item6 {
+    background-image: url('imagenes/Logo_Sears.png'); 
+    background-size: cover; /* Escala la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    text-decoration: none;
+    height: 40vmin;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    background-color: #cdd1cd;
+}
+.grid-item2:hover {
+    transform: scale(1.05);
+    background-color: #cdd1cd;
+}
+.grid-item3:hover {
+    transform: scale(1.05);
+    background-color: #cdd1cd;
+}
+.grid-item4:hover {
+    transform: scale(1.05);
+    background-color: #cdd1cd;
+}
+.grid-item5:hover {
+    transform: scale(1.05);
+    background-color: #cdd1cd;
+}
+.grid-item6:hover {
+    transform: scale(1.05);
+    background-color: #cdd1cd;
+}
+
+footer {
+    display: grid;
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 20px 0; /* Espacio interno */
+    position: relative; /* Posicionamiento relativo */
+    width: 100%; /* Ancho completo */
+    bottom: 0; /* Posicionamiento en la parte inferior */
+}
+
+footer ul {
+    list-style-type: none; /* Sin estilo de lista */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen */
+    display: flex; /* Flexbox para alinear elementos */
+    justify-content: center; /* Centramos los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+footer ul li {
+    display: inline; /* Mostrar los elementos en línea */
+}
+
+footer ul li a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1.2em; /* Tamaño de fuente */
+    transition: color 0.3s ease; /* Transición para el cambio de color */
+}
+
+footer ul li a:hover {
+    color: #ddd; /* Cambio de color al pasar el ratón */
+}
+
+footer p {
+    margin-top: 10px; /* Margen superior */
+    font-size: 1em; /* Tamaño de fuente */
+}
+
+td{
+    border: solid black 1px;
+}
+
+
