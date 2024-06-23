@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatics Mexico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidebar_div" ></div>
+        <a href="{{ url_for('index') }}">Inicio</a>
+        <a href="{{ url_for('pedidos') }}">Pedidos</a>
+        <a href="#">Tutoriales</a>
+        <a href="{{ url_for('contactos') }}">Contactos</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>  
+        <div class="base">
+            <p>Seleciona el un provedor</p>
+        </div>
+        
+        <!-- Grid Section -->
+        <div class="grid-container">
+            <a href="{{ url_for('opcion1') }}" class="grid-item"> </a><!-- Opcion Liverpool-->
+            <a href="{{ url_for('opcion2') }}" class="grid-item2"></a><!-- Opcion Cuidado Con el Perro-->                        
+            <a href="{{ url_for('opcion3') }}" class="grid-item3"></a><!-- Opcion Coppel-->
+            <a href="{{ url_for('opcion4') }}" class="grid-item4"></a><!-- Opcion Palacio De Hierro-->
+            <a href="{{ url_for('opcion5') }}" class="grid-item5"></a><!-- Opcion Forever 21-->
+            <a href="{{ url_for('opcion6') }}" class="grid-item6"></a><!-- Opcion SEARS-->
+        </div>
+     
+    </div>
+    
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
